@@ -7,6 +7,7 @@ public class PhoneBook {
     Map<String, String> map = new HashMap<>();
 
     public int add(String name, String phone) {
-        return 0;
+        map.put(name, phone);
+        return map.size();
     }
 }
