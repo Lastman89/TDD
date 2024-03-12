@@ -18,6 +18,16 @@ public class PhoneBookTest {
 
     }
 
+    @Test
+    public void testfindByNumber (){
+        PhoneBook pBook = new PhoneBook();
+        String phoneTest = "79134158924";
+
+        String fundName = pBook.findByNumber(phoneTest);
+        Assertions.assertTrue(fundName != null);
+    }
+
+
 
 
 }
